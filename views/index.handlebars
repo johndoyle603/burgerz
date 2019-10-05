@@ -1,0 +1,39 @@
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to Awful Burger</h1>
+            <p>Where the burgers are really forgettable</p>
+            <p><i>I mean, look at this ⬇⬇⬇</i></p>
+            <img src="assets/images/oldhamburger.jpg" />
+            <br>
+            <h3>Anyway, enter a sandwich you'd like to 'devour' if that's your thing (I guess if you're hungry enough, right?
+            </h3>
+
+
+        </div>
+        <div class="row center">
+
+        </div>
+        <div class="row center">
+            <div class="row">
+                <form>
+                    <h4>Enter the lousy burger you'd like to try</h4>
+                    <textarea></textarea>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+<ul>
+
+  {{#each burgers}}
+  <li>
+    <p>Burger:{{this.burgers}}</p>
+    <button>Devour</button>
+  </li>
+  {{/each}}
+</ul>
+
+    </div>
