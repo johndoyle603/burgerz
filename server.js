@@ -16,6 +16,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+app.get("/", function(req, res) {
+    res.json(path.join(__dirname, "views/layouts/index.html"));
+});
+
 
 app.listen(PORT, () => {
     console.log('server listening on port 3000');
